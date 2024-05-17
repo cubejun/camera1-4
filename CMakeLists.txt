@@ -22,7 +22,7 @@ include_directories(include)
 #build
 add_executable(pub src/pub.cpp src/pmain.cpp)
 ament_target_dependencies(pub rclcpp sensor_msgs cv_bridge OpenCV)
-add_executable(sub src/sub.cpp)
+add_executable(sub src/sub.cpp src/smain.cpp)
 ament_target_dependencies(sub rclcpp sensor_msgs OpenCV)
 
 # Install
